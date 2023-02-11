@@ -7,7 +7,7 @@ Stack::Stack() {
 }
 bool Stack::push(int x) {
     bool result;
-    if (top >= STACK_SIZE) {
+    if (top >= STACK_SIZE-1) {
         result = false;
     } else {
         data[++top] = x;
@@ -29,4 +29,10 @@ int Stack::pop() {
         throw -1;
     }
     return data[top--];
+}
+int Stack::peek() {
+    if (isEmpty()) {
+        throw -1;
+    }
+    return data[top];
 }

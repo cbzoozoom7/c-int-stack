@@ -3,7 +3,7 @@
 //Created 10 Feb 2023
 #ifndef INTSTACK_STACK
     #define INTSTACK_STACK
-    #define STACK_SIZE 10
+    #define STACK_SIZE 1000
     class Stack {
         public:
             Stack(); //makes a new int Stack, a first in, last out data structure.

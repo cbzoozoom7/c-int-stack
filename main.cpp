@@ -15,14 +15,20 @@ int main(int argc, char const *argv[])
         }
     }
     cout << "True: " << trueCount << ",\tFalse: " << falseCount << endl;
-    int exceptionCount = 0;
+    int peekExceptionCount = 0;
+    int popExceptionCount = 0;
     for (int i = 0; i < STACK_SIZE*10; i++) {
+        try {
+            cout << myStack.peek() << endl;
+        } catch (int e) {
+            peekExceptionCount++;
+        }
         try {
             cout << myStack.pop() << endl;
         } catch (int e) {
-            exceptionCount++;
+            popExceptionCount++;
         }
     }
-    cout << "Exceptions: " << exceptionCount << endl;
+    cout << "Peek Exceptions: " << peekExceptionCount << "\tPop Exceptions: " << popExceptionCount << endl;
     return 0;
 }
