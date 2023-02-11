@@ -4,6 +4,6 @@
 #include "main.h"
 int main(int argc, char const *argv[])
 {
-    cout << "Hello, world!" << endl;
+    Stack myStack();
     return 0;
 }
