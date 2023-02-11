@@ -15,5 +15,14 @@ int main(int argc, char const *argv[])
         }
     }
     cout << "True: " << trueCount << ",\tFalse: " << falseCount << endl;
+    int exceptionCount = 0;
+    for (int i = 0; i < STACK_SIZE*10; i++) {
+        try {
+            cout << myStack.pop() << endl;
+        } catch (int e) {
+            exceptionCount++;
+        }
+    }
+    cout << "Exceptions: " << exceptionCount << endl;
     return 0;
 }

@@ -11,7 +11,6 @@
             int pop(); //returns the last value added to the Stack & removes it.
             int peek(); //returns the last value added to the Stack, without removing it.
             bool isEmpty();
-            void debugPrint();
         private:
             int top; //tracks where the top of the Stack is. -1 is empty.
             int data[STACK_SIZE]; //stores the data in the Stack.

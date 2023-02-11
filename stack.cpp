@@ -15,3 +15,18 @@ bool Stack::push(int x) {
     }
     return result;
 }
+bool Stack::isEmpty() {
+    bool result;
+    if (top < 0) {
+        result = true;
+    } else {
+        result = false;
+    }
+    return result;
+}
+int Stack::pop() {
+    if (isEmpty()) {
+        throw -1;
+    }
+    return data[top--];
+}
