@@ -3,7 +3,7 @@
 //Created 10 Feb 2023
 #ifndef INTSTACK_MAIN
     #define INTSTACK_MAIN
-    #define TEST_SCALE 10
+    #define TEST_SCALE 1000
     #define FIZZ 3
     #include <iostream>
     #include <time.h>
