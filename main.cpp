@@ -22,12 +22,12 @@ int main(int argc, char const *argv[])
     }
     int emptyCount = 0;
     for (int i = 0; i < TEST_SCALE; i++) {
-        if (myStack.isEmpty()) {
+        if (myStack.isEmpty() && randStack.isEmpty()) {
             emptyCount++;
         }
-        opCount++;
+        opCount += 2;
     }
-    cout << "stack empty: " << emptyCount << "/" << TEST_SCALE << endl;
+    cout << "stacks empty: " << emptyCount << "/" << TEST_SCALE << endl;
     int trueCount = 0;
     int falseCount = 0;
     for (int i = 0; i < STACK_SIZE * TEST_SCALE; i++) {
